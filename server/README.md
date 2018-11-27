@@ -1,24 +1,46 @@
-# README
+# Server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very simple rails app which serves JSON data pertaining to a baseball game.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+In order to run this application locally, you will need versions `2.5.1` of ruby, and `5.2.1` of rails installed on your machine, as well as the `bundler` gem.
 
-* Configuration
+To test whether you're ready, you should be able to get something like to the following in your terminal:
 
-* Database creation
+```bash
+$ ruby -v
+ruby 2.5.1
+```
 
-* Database initialization
+```bash
+$ rails -v
+Rails 5.2.1
+```
 
-* How to run the test suite
+```bash
+$ bundler -v
+Bundler version 1.17.1
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Installing
 
-* Deployment instructions
+Once you have ruby, rails, and bundler installed, you should be able to run the following to install all the dependencies:
 
-* ...
+```bash
+bundle install
+```
+
+Then to run the application, try running:
+
+```bash
+rails server
+```
+
+...And navigating to `localhost:3000/game` in your browser. If you see a bunch of JSON data, you're done!
+
+## Running the tests
+
+You can run the tests for this project with `rails test` or `rails t`.
